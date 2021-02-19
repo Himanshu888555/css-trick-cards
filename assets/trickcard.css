@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    width: 100px;
+    height: 65px;
+}
+
+.left-card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background-clip: padding-box;
+    height: 100%;
+    padding: 0px 0px 0px 55px;
+    margin: -8px;
+    left: 0px;
+    top:20px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: rgb(255,255,255);
+    transform: rotateZ(0deg);
+    box-shadow: -0.5px 0.1px 2px rgb(255, 255, 255), inset 0 0 13px rgba(240, 240, 240, 0.2);
+}
+
+.left-card:before{
+    content: "";
+    position:absolute;
+    background: linear-gradient(to right,rgb(61, 61, 61),rgb(31, 34, 22));
+    border-radius:10px;
+    z-index: -1;
+    padding: 0px 13px 4px 2px ;
+    left:0px;
+    top: 0px;
+    width: 71%;
+    height: 100%;
+}
+
+.left-card:hover{
+    transition: all 0.5s ease-in-out;
+    transform: rotateZ(12deg);
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin: 10px 15px 10px 10px;
+    box-shadow: 0 0 8px rgb(137, 225, 252), inset 0 0 13px rgba(14, 226, 163, 0.2);
+    background: linear-gradient(to right ,rgb(255, 91, 91),rgb(128, 82, 255));
+}
+
+
+span{
+    margin-left:-50px ;
+}
+.a{
+    font-size: 5px;
+    padding-top:25px ;
+}
+.b{
+    font-size: 3px;
+}
+.c{
+    font-size: 3px;
+    color: black;
+}
+
+.left-card :hover + span{
+    color:red
+}
